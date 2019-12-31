@@ -36,6 +36,11 @@ L.tileLayer('map/{z}/{x}/{y}.jpg', {
   noWrap: true,
 }).addTo(map);
 
+var Apple = L.layerGroup();
+
+var Apple_1 = L.marker([44.707706,-0.615234]).addTo(Apple)
+.bindPopup("14x Apples");
+
 var Cords = L.layerGroup();
 
 var Cords_1 = L.marker([0,0], {draggable: true}).addTo(Cords);
@@ -51,15 +56,10 @@ var Mint_1 = L.marker([70,-50]).addTo(Mint)
 var Mint_2 = L.marker([10,-50]).addTo(Mint)
 .bindPopup("Mint");
 
-var Apple = L.layerGroup();
-
-var Apple_1 = L.marker([44.707706,-0.615234]).addTo(Apple)
-.bindPopup("14x Apples");
-
 var overlays = {
-  "Mint"    : Mint,
   "Apple"   : Apple,
   "Cords"   : Cords,
+  "Mint"    : Mint,
 }
 
 L.control.layers(null, overlays).addTo(map);

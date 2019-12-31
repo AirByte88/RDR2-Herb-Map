@@ -41,6 +41,17 @@ var Apple = L.layerGroup();
 var Apple_1 = L.marker([44.707706,-0.615234]).addTo(Apple)
 .bindPopup("14x Apples");
 
+var Common_Bulrush = L.layerGroup();
+
+var Common_Bulrush_1 = L.marker([55.634198,23.851318]).addTo(Common_Bulrush)
+.bindPopup("4x Common Bulrush");
+var Common_Bulrush_2 = L.marker([54.920828,24.279785]).addTo(Common_Bulrush)
+.bindPopup("4x Common Bulrush");
+var Common_Bulrush_3 = L.marker([55.856817,25.411377]).addTo(Common_Bulrush)
+.bindPopup("3x Common Bulrush");
+var Common_Bulrush_4 = L.marker([55.745666,25.510254]).addTo(Common_Bulrush)
+.bindPopup("3x Common Bulrush");
+
 var Cords = L.layerGroup();
 
 var Cords_1 = L.marker([0,0], {draggable: true}).addTo(Cords);
@@ -49,17 +60,40 @@ Cords_1.on('dragend', function(e){
   Cords_1.getPopup().setContent(Cords_1.getLatLng().toString()).openOn(Cords);
 })
 
-var Mint = L.layerGroup();
+var Evergreen_Huckleberry = L.layerGroup();
 
-var Mint_1 = L.marker([70,-50]).addTo(Mint)
-.bindPopup("Mint");
-var Mint_2 = L.marker([10,-50]).addTo(Mint)
+var Evergreen_Huckleberry_1 = L.marker([55.509971,24.554443]).addTo(Evergreen_Huckleberry)
+.bindPopup("2x Evergreen Huckleberry");
+var Evergreen_Huckleberry_2 = L.marker([55.658996,25.894775]).addTo(Evergreen_Huckleberry)
+.bindPopup("2x Evergreen Huckleberry");
+
+var Milkweed = L.layerGroup();
+
+var Milkweed_1 = L.marker([55.491304,23.719482]).addTo(Milkweed)
+.bindPopup("3x Milkweed");
+var Milkweed_2 = L.marker([55.09723,24.104004]).addTo(Milkweed)
+.bindPopup("2x Milkweed");
+
+var Oleander_Sage = L.layerGroup();
+
+var Oleander_Sage_1 = L.marker([54.654769,25.708008]).addTo(Oleander_Sage)
+.bindPopup("3x Oleander Sage");
+
+var Wild_Mint = L.layerGroup();
+
+var Wild_Mint_1 = L.marker([55.14121,24.246826]).addTo(Wild_Mint)
+.bindPopup("3x Wild Mint");
+var Wild_Mint_2 = L.marker([10,-50]).addTo(Wild_Mint)
 .bindPopup("Mint");
 
 var overlays = {
-  "Apple"   : Apple,
-  "Cords"   : Cords,
-  "Mint"    : Mint,
+  "Apple"                 : Apple,
+  "Common Bulrush"        : Common_Bulrush,
+  "Cords"                 : Cords,
+  "Evergreen Huckleberry" : Evergreen_Huckleberry,
+  "Milkweed"              : Milkweed,
+  "Oleander Sage"         : Oleander_Sage,
+  "Wild Mint"             : Wild_Mint,
 }
 
 L.control.layers(null, overlays).addTo(map);

@@ -41,6 +41,18 @@ var Apple = L.layerGroup();
 var Apple_1 = L.marker([44.707706,-0.615234]).addTo(Apple)
 .bindPopup("14x Apples");
 
+var Burdock_Root = L.layerGroup();
+
+var Burdock_Root_1 = L.marker([80.2347774,38.001709]).addTo(Burdock_Root)
+.bindPopup("3x Burdock Root");
+var Burdock_Root_2 = L.marker([79.637898,38.155518]).addTo(Burdock_Root)
+.bindPopup("3x Burdock Root");
+
+var Chanterelle = L.layerGroup();
+
+var Chanterelle_1 = L.marker([79.588379,39.594727]).addTo(Chanterelle)
+.bindPopup("3x Chanterelle");
+
 var Common_Bulrush = L.layerGroup();
 
 var Common_Bulrush_1 = L.marker([55.634198,23.851318]).addTo(Common_Bulrush)
@@ -51,6 +63,20 @@ var Common_Bulrush_3 = L.marker([55.856817,25.411377]).addTo(Common_Bulrush)
 .bindPopup("3x Common Bulrush");
 var Common_Bulrush_4 = L.marker([55.745666,25.510254]).addTo(Common_Bulrush)
 .bindPopup("3x Common Bulrush");
+var Common_Bulrush_5 = L.marker([54.572062,25.52124]).addTo(Common_Bulrush)
+.bindPopup("3x Common Bulrush");
+var Common_Bulrush_6 = L.marker([55.936895,27.169189]).addTo(Common_Bulrush)
+.bindPopup("4x Common Bulrush");
+var Common_Bulrush_7 = L.marker([55.813629,27.191162]).addTo(Common_Bulrush)
+.bindPopup("3x Common Bulrush");
+var Common_Bulrush_8 = L.marker([56.704506,27.158203]).addTo(Common_Bulrush)
+.bindPopup("4x Common Bulrush");
+var Common_Bulrush_9 = L.marker([56.728622,26.938477]).addTo(Common_Bulrush)
+.bindPopup("3x Common Bulrush");
+var Common_Bulrush_10 = L.marker([80.120449,37.55127]).addTo(Common_Bulrush)
+.bindPopup("4x Common Bulrush");
+var Common_Bulrush_11 = L.marker([79.88009,38.913574]).addTo(Common_Bulrush)
+.bindPopup("3x Common Bulrush");
 
 var Cords = L.layerGroup();
 
@@ -60,12 +86,36 @@ Cords_1.on('dragend', function(e){
   Cords_1.getPopup().setContent(Cords_1.getLatLng().toString()).openOn(Cords);
 })
 
+var Currant = L.layerGroup();
+
+var Currant_1 = L.marker([79.310794,37.716064]).addTo(Currant)
+.bindPopup("3x Currant");
+var Currant_2 = L.marker([78.26927,43.92334]).addTo(Currant)
+.bindPopup("2x Currant");
+var Currant_3 = L.marker([78.206563,43.92334]).addTo(Currant)
+.bindPopup("2x Currant");
+var Currant_4 = L.marker([77.706913,43.395996]).addTo(Currant)
+.bindPopup("3x Currant");
+
 var Evergreen_Huckleberry = L.layerGroup();
 
 var Evergreen_Huckleberry_1 = L.marker([55.509971,24.554443]).addTo(Evergreen_Huckleberry)
 .bindPopup("2x Evergreen Huckleberry");
 var Evergreen_Huckleberry_2 = L.marker([55.658996,25.894775]).addTo(Evergreen_Huckleberry)
 .bindPopup("2x Evergreen Huckleberry");
+var Evergreen_Huckleberry_3 = L.marker([77.579959,43.165283]).addTo(Evergreen_Huckleberry)
+.bindPopup("1x Evergreen Huckleberry");
+
+var Ginseng = L.layerGroup();
+
+var Ginseng_1 = L.marker([79.454511,24.246826]).addTo(Ginseng)
+.bindPopup("1x Ginseng (Alaskan)")
+var Ginseng_2 = L.marker([79.528647,38.452148]).addTo(Ginseng)
+.bindPopup("1x Ginseng (Alaskan)")
+var Ginseng_3 = L.marker([79.179588,35.870361]).addTo(Ginseng)
+.bindPopup("1x Ginseng (Alaskan)")
+var Ginseng_4 = L.marker([77.667084,43.209229]).addTo(Ginseng)
+.bindPopup("1x Ginseng (American)")
 
 var Milkweed = L.layerGroup();
 
@@ -73,27 +123,83 @@ var Milkweed_1 = L.marker([55.491304,23.719482]).addTo(Milkweed)
 .bindPopup("3x Milkweed");
 var Milkweed_2 = L.marker([55.09723,24.104004]).addTo(Milkweed)
 .bindPopup("2x Milkweed");
+var Milkweed_3 = L.marker([54.501948,25.718994]).addTo(Milkweed)
+.bindPopup("3x Milkweed");
+var Milkweed_4 = L.marker([55.720923,26.894531]).addTo(Milkweed)
+.bindPopup("3x Milkweed");
 
 var Oleander_Sage = L.layerGroup();
 
 var Oleander_Sage_1 = L.marker([54.654769,25.708008]).addTo(Oleander_Sage)
 .bindPopup("3x Oleander Sage");
 
+var Oregano = L.layerGroup();
+
+var Oregano_1 = L.marker([79.26587,37.540283]).addTo(Oregano)
+.bindPopup("3x Oregano");
+
+var Rams_Head = L.layerGroup();
+
+var Rams_Head_1 = L.marker([80.056153,30.948486]).addTo(Rams_Head)
+.bindPopup("1x Ram's Head");
+
+var Sage = L.layerGroup();
+
+var Sage_1 = L.marker([79.624056,39.649658]).addTo(Sage)
+.bindPopup("3x Sage");
+
+var Vanilla_Flower = L.layerGroup();
+
+var Vanilla_Flower_1 = L.marker([57.183902,28.828125]).addTo(Vanilla_Flower)
+.bindPopup("1x Vanilla Flower")
+var Vanilla_Flower_2 = L.marker([56.854979,27.092285]).addTo(Vanilla_Flower)
+.bindPopup("1x Vanilla Flower")
+
+var Violet_Snowdrop = L.layerGroup();
+
+var Violet_Snowdrop_1 = L.marker([78.95456,18.874512]).addTo(Violet_Snowdrop)
+.bindPopup("3x Violet Snowdrop");
+var Violet_Snowdrop_1 = L.marker([79.243338,37.408447]).addTo(Violet_Snowdrop)
+.bindPopup("2x Violet Snowdrop");
+
 var Wild_Mint = L.layerGroup();
 
 var Wild_Mint_1 = L.marker([55.14121,24.246826]).addTo(Wild_Mint)
 .bindPopup("3x Wild Mint");
-var Wild_Mint_2 = L.marker([10,-50]).addTo(Wild_Mint)
-.bindPopup("Mint");
+var Wild_Mint_2 = L.marker([79.935918,39.276123]).addTo(Wild_Mint)
+.bindPopup("3x Wild Mint");
+var Wild_Mint_3 = L.marker([79.560546,38.397217]).addTo(Wild_Mint)
+.bindPopup("4x Wild Mint");
+
+var Wintergreen_Berry = L.layerGroup();
+
+var Wintergreen_Berry_1 = L.marker([79.002867,18.984375]).addTo(Wintergreen_Berry)
+.bindPopup("1x Wintergreen Berry");
+var Wintergreen_Berry_2 = L.marker([80.193694,31.860352]).addTo(Wintergreen_Berry)
+.bindPopup("2x Wintergreen Berry");
+var Wintergreen_Berry_3 = L.marker([79.255634,37.628174]).addTo(Wintergreen_Berry)
+.bindPopup("1x Wintergreen Berry");
+var Wintergreen_Berry_4 = L.marker([78.282665,43.703613]).addTo(Wintergreen_Berry)
+.bindPopup("1x Wintergreen Berry");
 
 var overlays = {
   "Apple"                 : Apple,
+  "Burdock Root"          : Burdock_Root,
+  "Chanterelle"           : Chanterelle,
   "Common Bulrush"        : Common_Bulrush,
   "Cords"                 : Cords,
+  "Currant"               : Currant,
   "Evergreen Huckleberry" : Evergreen_Huckleberry,
+  "Ginseng"               : Ginseng,
   "Milkweed"              : Milkweed,
   "Oleander Sage"         : Oleander_Sage,
+  "Oregano"               : Oregano,
+  "Sage"                  : Sage,
+  "Ram's Head"            : Rams_Head,
+  "Vanilla Flower"        : Vanilla_Flower,
+  "Violet Snowdrop"       : Violet_Snowdrop,
   "Wild Mint"             : Wild_Mint,
+  "Wintergreen Berry"     : Wintergreen_Berry,
 }
 
 L.control.layers(null, overlays).addTo(map);
